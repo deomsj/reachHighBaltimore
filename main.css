@@ -1,0 +1,640 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-color: #465C8B;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(to bottom, #465C8B, #DFDCE3 8%, #DFDCE3 70%, #465C8B), #DFDCE3;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************
+**** Navigation - mobile
+******************************/
+header {
+  display: flex;
+  width: 100%;
+}
+.nav-small{
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+
+.rhrLogo img{
+  display: inline-block;
+  height:100px;
+  width: 140px;
+  margin: 5px 0 10px;
+  border-radius: 10px;
+}
+
+.nav-small-logo{
+  display: inline-block;
+}
+
+h5 {
+  margin: 0;
+  text-align: right;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  color: #465C8B;
+  background: #E8D64E;
+  border-bottom: 2px solid black;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-toggle{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.mobile-nav{
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav.show{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  text-align: right;
+}
+
+.mobile-nav.show li {
+  display: block;
+  background: linear-gradient(#DFDCE3 5%, #465C8B 15%, #465C8B 80%,#02146d)#465C8B;
+  border: 1px solid rgba(0,0,0,.4);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.mobile-nav.show li:last-child {
+  border-radius: 4px 4px 25px 25px;
+}
+
+.mobile-nav.show li a {
+  display: inline-block;
+  padding: 9px 20px;
+  font: 14 sans-serif;
+  color: #E8D64E;
+}
+
+.nav-large {
+  display: none;
+}
+
+/******************************
+**** Main Content
+******************************/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px 240px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.announcements {
+  background: url("media/background-chalkboard.jpg") no-repeat;
+  background-size: 100% 100%;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.announcements h2 {
+  font: 30px 'Permanent Marker', sans-serif;
+  text-decoration: underline;
+  color: rgba(246, 244, 241,.8);
+  margin: 10px 15px 10px;
+}
+
+.announcements h3{
+  font: italic 18px 'Hammersmith One', sans-serif;
+  text-decoration: underline;
+  color: rgba(246, 244, 241,.8);
+}
+
+.announcements p,
+.announcements a {
+  color: rgba(246, 244, 241,.8);
+}
+
+.announcements a {
+  text-decoration: underline;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  font: bold italic 20px 'Hammersmith One', sans-serif;
+  align-self: flex-start;
+  margin: 40px 15px 10px;
+}
+
+h3{
+  font: bold 18px 'Quicksand', sans-serif;
+  margin: 10px 5px 5px 30px;
+}
+
+a {
+  align-self: flex-start;
+}
+
+main p {
+  font: 18px 'Rasa', serif;
+  align-self: flex-start;
+  margin: 5px 10px 5px 50px;
+}
+
+.video-frame {
+  border-radius: 25px 25px;
+  width: 90%;
+  height: 300px;
+  margin: 10px 0;
+}
+
+.video-frame iframe {
+  border-radius: 25px 25px;
+  display: block;
+  width: 100%;
+  height: 300px;
+  box-shadow: 0px 0px 3px 9px rgba(0, 0, 0, 0.4);
+}
+
+.sponsors-image {
+  width: 90%;
+  border-radius: 25% 10%;
+  box-shadow: 6px 6px 3px 9px rgba(0, 0, 0, 0.4);
+}
+
+
+/******************************
+**** footer
+******************************/
+
+footer{
+  position: absolute;
+  bottom: 0;
+  padding: 0 0 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0;
+  font: 15px sans-serif;
+  text-align: center;
+}
+
+.footer-phone,
+.footer-email {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px;
+}
+
+.footer-contact-info a,
+.footer-address{
+  align-self: center;
+  text-align: center;
+  color: #f3e70b;
+}
+
+.footer-contact-info,
+.footer-address {
+  margin: 0 15px;
+}
+
+.footer-rhrLogo img{
+  height: 80px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.8);
+}
+
+.footer-social-media img{
+  height: 40px;
+  margin: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.8);
+}
+
+/******************************
+**** Photo Gallery Page
+******************************/
+.gallery {
+  width: 95%;
+  margin: 40px 0 250px 0;
+
+}
+
+.gallery .main-display-frame {
+  width: 95%;
+  text-align: center;
+}
+
+.gallery .main-display{
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.gallery .thumbs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.thumb {
+  width: 80px;
+  height: 80px;
+  margin: 0.5%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+
+/******************************
+**** Medium Screen Sizes
+******************************/
+
+@media only screen and (min-width: 600px){
+
+  body {
+    background: linear-gradient(to bottom, #465C8B, #DFDCE3 8%, #DFDCE3 88%, #465C8B), #DFDCE3;
+  }
+
+  /******************************
+  **** Top Nav Bar - medium screens
+  ******************************/
+
+  .nav-small,
+  .nav-dropped {
+    display: none;
+  }
+
+  .nav-large {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .nav-large-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-button {
+    align-self: baseline;
+    flex-grow: 1;
+    padding: 0;
+    margin: 34px 1px 0;
+    text-decoration: none;
+    border-radius: 5px 5px 0 0;
+    /*box-shadow: 0px -2px 2px 1px rgba(0, 0, 0, 0.8);*/
+  }
+
+  h5 {
+    box-shadow: 0 2px 2px black;
+  }
+
+  .direct-link a {
+    box-shadow: inset 0px 0px 2px black;
+  }
+
+  .nav-link {
+    display: inline-block;
+    padding: 7px 10px;
+    margin: 0;
+    font: bold 12px sans-serif;
+    background: #E8D64E;
+    color: #465C8B;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .drop-down{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .drop-down.show{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0);
+  }
+
+  .drop-down.show li {
+    display: block;
+    background: linear-gradient(#DFDCE3 5%, #465C8B 15%, #465C8B 80%,#02146d), #465C8B;
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .drop-down.show li:last-child {
+    border-radius: 4px 4px 25px 25px;
+  }
+
+  .drop-down.show li a {
+    display: inline-block;
+    padding: 9px 10px;
+    font: 14 sans-serif;
+    color: #E8D64E;
+  }
+
+  main {
+    margin: -30px 30px 120px;
+  }
+
+  h1 {
+    display: block;
+    font: 50px 'Shrikhand', sans-serif;
+    margin: 20px 2px 0;
+    align-self: center;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .announcements {
+     margin: 15px;
+  }
+
+  .video-frame {
+    height: 400px;
+  }
+
+  .video-frame iframe {
+    height: 400px;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
+  .footer-contact-info {
+    order: -1;
+    margin: 0 -5px 0 0;
+    margin: 6px 5px 0;
+  }
+
+
+}
+
+/******************************
+**** Large Screen Sizes
+******************************/
+
+@media only screen and (min-width: 835px){
+
+  .nav-link {
+    padding: 9px 18px;
+    font: bold 16px sans-serif;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h3{
+    font-size: 35px;
+  }
+
+  main p {
+  font-size: 24px;
+  }
+
+  .video-frame {
+    height: 550px;
+  }
+
+  .video-frame iframe {
+    height: 550px;
+  }
+
+}
+
+
+/******************************
+**** Extra Large Screen Sizes
+******************************/
+
+@media only screen and (min-width: 1050px){
+
+  header{
+    justify-content: center;
+  }
+
+  .nav-large {
+    justify-content: space-between;
+  }
+
+  /* Photo Gallery Page */
+  .gallery .main-display-frame{
+    margin: 0 0 10px;
+    width: 70%;
+    float: left;
+  }
+
+  .gallery .main-display{
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .gallery .thumbs {
+    float: right;
+    width: 30%;
+  }
+
+}
+
+/******************************
+**** Content Pages
+******************************/
+
+.statement{
+  width: 80%;
+  align-self: center;
+  font: 18px sans-serif;
+}
+
+p.statement{
+  text-align: center;
+}
+
+ul.statement{
+  padding-left: 0;
+}
+
+.statement-left {
+  width: 80%;
+  align-self: center;
+  text-align: left;
+  text-indent: 30px;
+  font: 18px sans-serif;
+
+}
+
+.pic {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.statement li{
+  margin: 12px 0 0 24px;
+}
+
+button {
+  font: bold 18px sans-serif;
+  padding: 10px;
+  border-radius: 15px;
+  background: #E8D64E;
+  color: #465C8B;
+}
+
+
+/******************************
+**** Mission Page
+******************************/
+
+.mission-how{
+  width: 75%;
+  font: 18px sans-serif;
+}
+
+.mission-how li {
+  margin: 18px 0;
+}
+
+/******************************
+**** Important Dates Page
+******************************/
+
+.race-dates li{
+  margin: 5px 0;
+  font: 18px sans-serif;
+}
+
+.race-dates li b{
+  font: bold 22px sans-serif;
+}
+
+.race-dates a {
+  text-decoration: underline;
+  font: 20px sans-serif;
+}
+
+.seasons{
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 10px;
+  font:16px sans-serif;;
+}
+
+.season {
+  max-width: 300px;
+}
+
+.season li {
+  margin-bottom: 7px;
+}
+
+/******************************
+**** In the Media Page
+******************************/
+
+.media-links a {
+  font: 18px sans-serif;
+}
+
+.media-links li {
+  margin: 10px 0;
+}
+
+/******************************
+**** Rower Blogs
+******************************/
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  font: 16px sans-serif;
+  margin: 20px 0 50px 0;
+}
+
+.blog button{
+  width: 200px;
+  align-self: center;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+/******************************
+**** Contact Us
+******************************/
+
+iframe {
+  width: 90%;
+}
+
+div.member {
+  margin-top: 40px;
+}
+
+.sponsors-page p{
+  text-indent: 20px;
+  margin: 30px 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
